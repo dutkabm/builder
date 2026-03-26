@@ -1,0 +1,3 @@
+[submodule "openipc"]
+	path = openipc
+	url = git@github.com:dutkabm/firmware.git
