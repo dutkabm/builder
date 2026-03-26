@@ -1,12 +1,11 @@
 name: Build
 on:
-  schedule:
-    - cron: '0 3 * * *'
   workflow_dispatch:
     inputs:
-      platform:
-        description: Platform
-        required: false
+      enabled:
+        description: 'Set to true to run (disabled by default)'
+        required: true
+        default: 'false'
 
 env:
   TAG_NAME: latest
